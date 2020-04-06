@@ -1,0 +1,31 @@
+<div class="row">
+  <h3 class="title">Welcome to the kitty fact fetcher!</h3>
+</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg fetcher" *ngIf="!submitted">
+        <form [formGroup]="catFactGetter" (ngSubmit)="getKittyFacts()">
+          <div class="form-group">
+            <p>Enter in the quantity of facts you'd like to fetch.</p>
+            <input type="number" class="form-control" formControlName="factQty" id="factQty">
+          </div>
+          <div class="form-group">
+            <button class="btn btn-light" type="submit">Get Kitty Facts</button> |
+            <button class="btn btn-light" routerLink="/">Go Back</button>
+          </div>
+          <div *ngIf="factError">
+            <h4>Please enter 1-98 Kitties</h4>
+          </div>
+        </form>
+      </div>
+      <div *ngIf="facts.length >= 1" class="col-md block">
+        <h4>Here are your {{facts.length}} facts</h4>
+        <ul>
+          <li *ngFor="let fact of facts">{{fact.fact}}</li>
+        </ul>
+        <button id="goBack" class="btn btn-light" routerLink="/">Go Back</button> | <button class="btn btn-light" (click)="reset()">More Facts</button>
+      </div>
+    </div>
+</div>
+
+

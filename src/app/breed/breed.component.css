@@ -1,0 +1,30 @@
+h4 {
+  color: white;
+}
+
+li {
+  color: white;
+}
+
+.label {
+  color: white;
+}
+
+.title {
+  margin: 0;
+  padding: 2%;
+  width: 100%;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  position: center;
+  width: 80%;
+}
+
+.table {
+  color: white;
+  background-color: rgba(255, 255, 255, .25);
+  margin-top: 2%;
+}

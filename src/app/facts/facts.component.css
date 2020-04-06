@@ -1,0 +1,23 @@
+.title {
+  margin: 0;
+  margin-top: 5%;
+  padding: 2%;
+  width: 100%;
+  /* background-color: rgba(255, 255, 255, .25); */
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  position: center;
+  width: 80%;
+}
+
+p {
+  color: white;
+}
+
+h4 {
+  color: white;
+}
+
